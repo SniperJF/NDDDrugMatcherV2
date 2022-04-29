@@ -1,0 +1,260 @@
+[11C]MPC6827
+11C-PBR28
+11C-PiB
+[123I]CLINDE
+[123I]MNI-420
+[123I]β-CIT
+13C6 Leucine
+AB1010
+ABBV-8E12
+ABT-957
+ABvac40
+ACI-35.030, JACI-35.054
+ACP-103
+AFFITOPE® PD01A + Adjuvant
+AFQ056
+AL-108
+Albutein 5%
+Allopregnanolone injection (intravenous solution)
+AltoidaML
+Ambroxol
+AMX0035
+Amyvid
+ANAVEX2-73
+Anti-Parkinson medication, Deep Brain Stimulation
+ANX005
+Apidra
+Apomorphine
+AQW051
+Aricept
+aripiprazole
+Artificial CSF
+ATH-1017
+Atomoxetine
+autologous mesenchymal stem cells
+AVP-923
+AZD0328
+AZD5213
+Azilect
+Betaquik MCT supplement
+Bupropion
+Caffeine
+Canakinumab
+Cannabidiol
+Cannabis, Medical
+Capsaicin
+carbidopa-levodopa
+Carvedilol
+Celecoxib
+Celexa
+CerefolinNAC®
+Cholecalciferol
+Cilostazol
+Circadin
+Citalopram
+CNM-Au8
+coenzyme Q10
+Comtan
+CoQ10
+CORT108297
+creatine
+Cromolyn
+Cu(II)ATSM
+Dabigatra
+DAOIB
+Dasatinib + Quercetin
+Dasatinib, Quercetin
+davunetide (AL-108, NAP)
+Deferiprone
+Dexmedetomidine
+Dexpramipexole
+DFP
+DHA
+diacetylbis(N(4)-methylthiosemicarbazonato) copper(II)
+Dimebon
+Dimebon (latrepirdine)
+DNL747
+Donepezil
+Donepezil 10 mg
+Droxidopa
+Duloxetine
+E2020
+E2027
+Ebixa
+Ebixa®
+EEG
+Effexor XR
+EMG
+EMST 150
+Emtriva Capsule
+entacapone
+EPI-589
+Escitalopram
+EVP-0962
+Exelon
+Exelon Patch (rivastigmine transdermal system)
+Exendin-4 SC
+[F18]-FDDNP
+Fasudil
+FDG
+Ferriprox
+GAITRite
+Galantamine
+GM6
+GM602
+GM604
+GM608
+GSK239512
+HB-adMSCs
+HPP854
+HTL0018318
+Huperzine A
+Idebenone
+Incobotulinum Toxin A
+Infinitome
+Inosine
+Insulin
+Insulin glulisine
+Insulin (Humulin® R U-100)
+JNJ-40346527
+Keppra
+ladostigil hemitartrate
+Leukine
+levetiracetam
+Lexapro
+Liraglutide
+Lithium
+lithium carbonate
+Lodosyn
+L-Serine
+LY2062430
+LY2599666, Solanezumab
+LY3191748
+Melatonin
+Memantine
+Metabolic Cofactor Supplementation, Sorbitol
+Metformin
+Methylene Blue, FD&C Blue # 2, Phenazopyridine hydrochloride
+Methylphenidate
+Methylprednisolone
+Midazolam
+Mid dose ANAVEX2-73
+Midodrine
+minocycline
+MIRT
+MK-4334, Donepepzil
+MK-8931
+modafinil
+Moxifloxacin
+N-831(Traneurocin) 10 mg QD, NA-831 (Traneurocin) 20 mg QD, NA-831 (Traneurocin) 40 mg QD
+N-acetylcysteine
+Namenda
+NAP
+NBMI
+neflamapimod
+Nelotanserin
+Neuraceq
+Niacinamide
+Nicotinamide
+Nicotinamide riboside
+Northera
+Novolin R
+NP001
+NP031112
+Nuedexta
+Olanzapine
+ONO-2506PO
+Oxaloacetate (OAA)
+Paracetamol
+Perampanel
+Pimavanserin
+Pimavanserin tartrate
+Pioglitazone
+Placebo, DAOI-B
+Posiphen
+Posiphen® tartrate capsules
+pramipexole
+Prazosin
+Precedex
+Prednisone
+Pridopidine
+ProAmatine
+Progenitor Stem Cell Culture
+Psilocybin
+PU-AD
+Quetiapine
+Ramelteon
+Rapamune
+Rapamycin
+rasagiline
+rasagiline mesylate
+Reminyl
+Resveratrol
+Rifadin
+Rifampicin
+Rifampin
+Riluzole
+Risperidone
+Ritalin
+rivastigmine
+Rofact
+Roflumilast
+Rosiglitazone
+ROTIGOTINE
+RVT-101 35 mg
+Safinamide Methanesulfonate
+SAGE-718
+Salsalate
+Semaglutide
+Senicapoc
+Sertraline
+Simvastatin
+Sinemet
+Sirolimus
+SNK01
+Sodium Oxybate
+sodium phenylbutyrate
+Solanezumab
+Spironolactone
+SRT
+stem cells
+Strattera
+Supressi. T-Diet plus Range, High Protein. T-Diet plus Range
+T807
+T-817MA
+Tacrolimus
+TAK-071
+Tasigna
+Tasmar
+Tauvid
+TD-9855
+testosterone gel
+tideglusib
+Tilavonemab
+TMS
+tolcapone
+Toviaz
+TPI-287 20 mg/m2
+TPI-287 6.3 mg/m2
+Trazodone
+TRx0237
+TSB Axo
+TVP-1012
+Ursodiol
+Valaciclovir 500Mg Tablet
+Valtrex
+Varenicline
+Venlafaxine
+Verdiperstat
+Verubecestat 12 mg (Parts 1 and 2), Verubecestat 40 mg (Parts 1 and 2)
+Viagra
+Victoza
+Vitamin D3
+Vitamin E
+Vizamyl
+VX-745
+Warfarin
+Yband (YDT-201N)
+Zoledronic Acid 5Mg/Bag 100Ml Inj
+Zolpidem
+

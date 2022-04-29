@@ -1,0 +1,107 @@
+11 Carbon Pittsburgh compound B
+11C-Pittsburgh Compound B
+[123I]-FP-CIT SPECT
+[123I]-IBVM
+18F-AV-1451
+18F-AV-1451 (also known as [F-18]T807 or LY3191748)
+18F-AV-45
+18F-AV-45, LY3078786
+18F-AV-45 PET
+[18F] CFPyPB
+18F-Dopa, 11C-methylreboxetine, 13N-Ammonia, 18F-Dopamne, Desipramine (DMI)
+18F-FDG
+[18F]FDOPA, Carbidopa 200mg oral dose, Entacapone 400mg oral dose
+[18F]-FEPPA
+[18F]Florbetaben
+[18F]florbetapir
+[18F]FPEB
+[18F]G02941054
+[18F] MK6240
+18F-MK-6240
+[18F]MK-6240, ~185 MBq, [18F]MK-6240, ~160 MBq
+[18F]MNI-1126
+[18F]MNI-815 (MNI-815)
+[18F]MNI-958
+[18F]NAV4694
+[18-F]PBR06
+[18F] PBR06
+[18F]-PI2620
+[18F]PI-2620
+[18F]T807 ([18F]MNI-777)
+[18F] THK5351
+[18F]THK-5351
+Amyvid
+AV-1451
+AV-45
+AV-45, Neuraceq
+Bacteriostatic saline
+Beta amyloid imaging
+Biological sample collection
+Biomarker
+Biomarker assay
+Biomarker Data Collection
+Blarcamesine
+Boston Cognitive Assessment (BoCA)
+Brain MRI
+Brainsway H1-Coil Deep TMS System
+Bromocriptine
+C-11 PIB
+C11 PiB PET/CT
+C11 Pittsburgh Compound B
+Diffusion Tensor Imaging
+Diffusion weighted imaging
+Drug: 18F-AV-1451
+DVA, FDOCT, Pattern ERG, Optical Coherence Tomography
+Dynamic PET imaging
+EEG
+F-18
+F 18 AV-1451
+F-18 AV 1451
+[F-18] AV-1451
+[F18] AV-1451
+F-18 AV-45
+[F18] AV-45
+F-18 BAY
+F-18 Fluorodopa
+[F-18] PBR06
+F-18 PMPBB3
+[F-18]T807
+[F18]T807
+F-18 THK-5351
+[F-18] W372
+Florbetaben
+Florbetaben F 18
+florbetapir
+Florbetapir
+florbetapir F 18
+Florbetapir F 18
+Flortaucipir F18
+Flow MRI
+FluoroTau
+Flutametamol PET
+Flutemetamol
+Flutemetamol F 18
+fMRI
+Fourier Domain Color Doppler Optical Coherence Tomography
+HP 129Xe fMRI
+Ioflupane
+Ioflupane (123I)
+Long-term EEG monitoring
+Low Intensity Focused Ultrasound Pulse
+non-invasive retinal imaging
+PET
+PET (60/30/10) diluent plus sodium chloride for injection
+PET scan
+PET Scan
+PET Tracer
+PET tracer for Amyloid-beta
+PET tracer for Tau protein
+PiB
+Pittsburgh compound B
+Pittsburgh Compound B
+Positron Emission Tomography
+Retinal Imaging
+Sunphenon EGCg
+Sunphenon EGCG
+tau PET
+

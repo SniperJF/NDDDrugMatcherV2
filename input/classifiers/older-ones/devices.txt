@@ -1,0 +1,78 @@
+Activa PC
+Activa PC Implantable Pulse Generator (Medtronic, Inc.)
+Activa PC Neurostimulator Model 37601 (Medtronic)
+Activa PC or RC neurostimulator, Medtronic
+Activa RC Implantable Pulse Generator (Medtronic, Inc.)
+Active tDCS
+BCI-FIT multi-modal access, BCI-FIT adaptive signal modeling, BCI-FIT active querying, BCI-FIT language modeling
+Boston Scientific
+Boston Scientific Device
+Boston Scientific Precision® System
+Boston Scientific Vercise DBS
+BrainAmp Amplifier
+BrainPalTM
+COGNISION™ System
+colonoscopy or rectosigmoidoscopy
+DBS
+Deep brain stimulation electrodes (Medtronic or Abbott)
+ExAblate
+ExAblate 4000
+ExAblate MRgFUS
+ExAblate Neuro
+Focused Ultrasound
+Focused Ultrasound (FUS)
+Foot Mechanical Stimulation (GONDOLA)
+Gamma frequency stimulation
+GONDOLA equipment (Ecker Technologies Sagl, Switzerland)
+GONDOLA equipment (Ecker Technologies Sagl, Switzerland).
+Implantable SCS electrode and IPG (Medtronic)
+In-laboratory polysomnography, Home Sleep Apnea Test
+Kinetra Implantable Pulse Generator (Medtronic, Inc.)
+LSVT
+LSVT ARTIC
+LSVT LOUD
+Magstim
+Magstim Corporation
+Magstim rapid 2
+Magstim Super Rapid 2
+Medtronic
+Medtronic Activa DBS System
+*Medtronic Activa PC Model 37601 Implantable Neurostimulator (INS)
+*Medtronic Model 3387 DBS Lead
+*Medtronic Model 37085 DBS Extension Kit
+*Medtronic Model 3708660 DBS Extension Kit
+Medtronic SynchroMed® II Infusion System
+MRgFUS
+MRgFUS Vim ablation
+MR Guided Focused Ultrasound
+MRI
+Muscle relaxation using full body massage machine
+Nautilus NeuroWaveTM System
+Non-invasive Brain Stimulation
+Non-invasive Focused Ultrasound Ablation of Thalamus Vim nucleus
+PPC S8 AUTOSET SPIRIT II AUTO (Resmed)
+PPC SOMNOSMART 2 (Weinmann)
+PPC SYSTEM ONE AUTO A FLEX (Respironics)
+Proclaim™ Implantable Pulse Generator with leads
+Rechargeable Neurostimulator
+REMSTAR AUTO M.SERIES (Respironics)
+REMSTAR PRO M?SERIES (Respironics)
+rTMS
+rTMS - Sham
+rTMS treatment
+rTMS Treatment
+Sham
+Sham AIH
+Sham DBS
+Sham repetitive transcranial magnetic stimulation
+Sham stimulation
+Sham tDCS
+Sham Treatment
+Soletra Implantable Pulse Generator (Medtronic, Inc.)
+tDCS
+tDCS active
+tDCS, direct current stimulation
+theta Burst, rTMS
+Transcranial MRgFUS Thalamotomy
+Voice Amplifier
+

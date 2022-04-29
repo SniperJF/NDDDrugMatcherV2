@@ -1,0 +1,76 @@
+#####This list is for trials to exclude from NDD eligibility criteria because they were incorrectly  flagged as having multiple NDD Listed. NCTID listed, followed by reason for exclusion#####
+NCT04292223; MSA and PSP are exclusion factors
+NCT04334317; DLB only if they meet criteria for PD
+NCT04588285; this is DLB and MCI of DLB; one disorder
+NCT02703636; HD, PD are listed in the exclusion criteria
+NCT01522404; HD are in the exclusion criteria
+NCT02839642; PD is listed in exclusion criteria
+NCT00063193; PD only, PSP listed in the exlusion factors
+NCT01327859; PD only, PSP is listed in the exlusion factors
+NCT00977665; this MSA with parkinsonism, but not PD
+NCT00478205; PD is an exlusion factor
+NCT01287221; MSA only, PD is exslusion factor
+NCT01187888; PSP only, parkinsonism is in exclusion factors
+NCT01049399; PSP only, others exclusion factors
+NCT00416169; PSP only, AD is exclusion factor
+NCT00549601; AD only, others exlusion factors
+NCT00216502; AD only, others exlusion factors
+NCT03068468; PSP only, ALS is in exclusion factors
+NCT01056965; PD in exclusion factors
+NCT01110720; PD in exclusion factors
+NCT02133846; PD, AD medicine ok but not diagnosis
+NCT03658135; PD, AD medicine ok but not diagnosis
+NCT04539041; PD, AD medicine ok but not diagnosis
+NCT04201093; MSA and PDP excluded
+NCT04369430; MSA, DLB, PSP excluded
+NCT04381468; FTDLD, MCI, DLB excluded
+NCT03639987; DLB, FTDLD excluded
+NCT04489017; AD excluded
+NCT03056729; NDDs excluded
+NCT04253132; PD excluded
+NCT00921128; NDD excluded
+NCT02494024; PD excluded
+NCT01397539; DLB excluded
+NCT00076492; PSP excluded
+NCT03739814; PD excluded
+NCT04287829; PD and AD not present
+NCT03021486; PD, AD excluded
+NCT01597518; AD, PD excluded
+NCT00751101; AD, PD excluded
+NCT04067414; ALS, PD excluded
+NCT02646826; NDD excluded
+NCT02131545; HD, PD excluded
+NCT00703677; PD excluded. Dr.C
+NCT02429557; Exclude - device trial. Dr.C
+NCT03753763; No, MSA only. Dr.C
+NCT02422485; No, PSP only. Dr.C
+NCT02422485; AD/PD excluded. Dr. C
+NCT04165486; Do not include (MSA only). Dr. C
+NCT03888222; Do not include DLB only. Dr. C
+NCT04739423; Do not include PD only. Dr. C
+NCT04002674; Do not include DLB only. Dr. C
+NCT03996460; Do not include DLB only. Dr. C
+NCT02071459; Do not include MSA only. Dr. C
+NCT04405596; Do not include DLB only. Dr. C
+NCT01146548; Do not include MSA only. Dr. C
+NCT04590495; Exclude. Dr. C
+NCT04014387; Exclude. Dr. C 
+NCT01683253; Exclude. Dr. C
+NCT04315038; Exclude. Dr. C
+NCT04377945; Exclude. Dr. C
+NCT04173832; Exclude. Dr. C
+NCT03956979; Exclude. Dr. C
+NCT03829657; Extension of previous study, Exclude. Dr. C
+NCT03653650; Exclude. Dr. C
+NCT03991273; Exclude, Psychosocial. Dr. C
+NCT03260803; Exclude. Dr. C 
+NCT00607451; Exclude. Dr. C 
+NCT00127114; Exclude. Dr. C 
+NCT01548937; Exclude. Dr. C 
+NCT02259049; Exclude. Dr. C 
+NCT01844648; Exclude. Dr. C
+NCT01044992; Biomarker Trial. Exclude for now. Dr. C
+NCT04117178; Biomarker Trial. Exclude for now. Dr. C
+NCT04764669; Biomarker Trial. Exclude for now. Dr. C
+NCT03589976; Exclude,  Parkinsonism is not PD. Dr. C
+NCT04734379; Biomarker Trial. Exclude for now. Dr. C

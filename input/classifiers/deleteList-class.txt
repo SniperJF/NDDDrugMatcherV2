@@ -1,0 +1,192 @@
+AV-1451
+AV-45
+Actigraphy
+Acupuncture
+Amyloid PET CT
+Amyvid
+Apolipoprotein (ApoE) detection
+Auto-Assessment Manikins (SAM)
+Barcelona test (BT)
+Beck Depression Inventory-II (BDI-II)
+Biological sample collection
+Biopsy
+Blood
+Blood draw
+Blood sample
+Blood sampling
+Blood test
+Blood tests
+Brain MRI
+C-11
+CPAP
+Cannabidiol
+Clinical evaluation
+Continuous positive airway pressure
+Dance
+Dancing
+EEG
+EEG with event-related potential (ERP)
+EMG
+Education
+Electroencephalography
+Emission
+Enhanced Usual Care
+Enhanced usual care
+Exergame 
+FDG
+Florbetapir
+Fluoro-tau
+Frontal assessment battery (FAB)
+Gait training
+Global Deterioration Scale (GDS)
+Hypnosis
+InSight
+Inactive drug
+Infinitome
+Instructions about Alzheimers
+Instructions about Overestimates
+Instructions about Parkinson's
+Instructions about Underestimates
+Light
+Lombar Punction
+Longitudinal follow-up
+Lumbar Puncture
+Lumbar puncture
+MIRT
+MRI
+Magnetic Resonance Imaging
+Magnetic resonance imaging
+Memory alteration test (M@T)
+Mini Cognitive Examination (MCE)
+Naturalistic observation
+Neurocognitive battery
+Neurofeedback
+Neuropsychological assessment
+No Intervention
+No intervention
+No intervention. Only survey and normal use of eye-tracking
+None-Observation Only
+Normal Saline
+Normal saline
+OCT
+Observation
+Observational
+Observational Cohort
+Olive oil
+Optical Coherence Tomography
+Optical coherence tomography
+PET
+PET Biomarker Disclosure
+PK microsampling of blood
+Peripheral Nerve Stimulation
+Peripheral nerve stimulation
+Phonetic complexity effects on speech motor performance
+Placebo
+Placebo Comparator
+Placebo Oral Capsule
+Placebo Oral Tablet
+Polysomnography
+Positive and Negative Affect Scale (PANAS)
+Positron
+Positron-Emission Tomography (TEP) /(FDG)
+Psychiatric tests
+Registry
+Rey-Osterrieth Complex Figure Test (ROCFT)
+Routine care
+Saline
+Skin Biopsy
+Skin biopsy
+Spanish-Complutense Verbal Learning Test (TAVEC)
+Standard of Care
+Standard of care
+Study Drug
+Study drug
+Sugar Pill
+Sugar pill
+Tauvid
+Tomography
+Tongue Strength Measurement
+Usual Care
+Usual care
+Videofluoroscopic Swallowing Examination
+Virtual Reality
+Virtual reality
+blood draw
+blood sample
+cannabidiol
+cognitive assessments
+florbetapir
+inactive drug
+lumbar puncture
+no intervention
+normal saline
+observational
+prevalence of behavioural dysexecutive syndrome
+saline
+saline solution
+sugar pill
+################Temporarily-Deleting-all-Non-Drugs-until-we-classify-the-below-with-more-detail################
+18-FDTBZ
+3D gait analysis
+AAV2-GDNF gene therapy
+Amniotic and Umbilical Cord Tissue Procedure
+Ankle foot orthosis
+Anterior cingulate cortex activation, Primary auditory cortex activation
+Assessments
+Brain Computer Interface Keyboard
+CBT group
+CT
+CareHeroes
+CoRe software
+Convection enhanced delivery/AAV2-GDNF
+Conventional
+Cycling
+Cytology and Immunohistochemistry
+Data set as defined by the ERN Research Workgroup of the European Commission
+Day care for patients with dementia
+Driving an electric wheelchair in real condition, Driving an electric wheelchair in virtual condition
+Dual mobility implant, Traditional, Single-bearing hip implant
+Exenatide Pen Injector [Bydureon]
+Exergaming
+F18-AV45
+Four Square Step Test
+Fresh Frozen Plasma
+GE-REACH-program
+Genetic study of ALS families
+Heating pad
+Hippotherapy
+Intracerebral microinjections
+Kinesiotaping
+LeSCoD scale
+Levodopa test, determination of objective and subjective pain threshold
+Lokomat
+MP Diagnostics HTLV Blot 2.4
+MicRNAs battery kits
+Microbiome specimens in stool
+Montessori reading roundtable, Usual reading
+Motion Analysis
+Neuromodulation
+Neurosleeve
+Overminus treatment, Non-overminus treatment
+PAACC, REACH-VA
+Passive heat stress
+Phonological, Orthographic, Semantic, Lexical, Untrained
+PoNS Treatment
+Psycho-behavioural assessment
+SBP English, SBP SPANISH
+SAMSTAR, RAVLT
+Scale vaidation
+Therapist LEAP session feedback, Participant LEAP session feedback
+Web-based Survey
+oculomotor measurements
+biopsies of colon
+cerebrospinal fluid
+conventional therapy
+cough airflow measure, vocal tasks, true vocal fold movement, spirometry test, maximum expiratory pressure (MEP)
+eM2M
+enhanced olfactory stimuli
+low level laser therapy
+powered orthosis
+AOT
+PNF
+PRT

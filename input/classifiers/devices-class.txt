@@ -1,0 +1,198 @@
+1 mA HD-tDCS
+2 mA HD-tDCS
+3 mA HD-tDCS
+Abdominal compression
+Accelerometer
+Active Transcranial Direct Current Stimulation (tDCS)
+Active tDCS
+Active tPBM-2.0
+Activlink insole, Activlink Phone Application
+Addenbrooke's cognitive examination
+Altoida: neuropsychological
+AltoidaML
+Anodal tCDS
+Anodal tDCS
+Anti-Parkinson medication
+BCI-FIT active querying
+BCI-FIT adaptive signal modeling
+BCI-FIT language modeling
+BCI-FIT multi-modal access
+Bilateral GPi DBS
+Bilateral STN DBS
+Blood pressure monitoring
+Boston Cognitive Assessment (BoCA)
+Brain Fitness
+Brain HQ
+Brain fitness app
+Brain fitness app with tACS
+Brain-Computer Interface
+BrainPalTM
+Brainsway H1-Coil Deep TMS System
+COGNISION™ System
+Categorical Language Fluency Smartphone Application
+Closed loop acoustic stimulation
+Coach Pepper
+Coach Pepper group, Tablet group
+CogCheck
+Cognitive and Behavioral experimental tasks
+Cognitive tests
+Combination of 40Hz light and cognitive therapy (ALZLIFE)
+Computer-based cognitive training
+Computerized Cognitive Training
+Computerized cognitive battery: Cognigram (CG)
+Computerized cognitive training
+Computerized games
+Condition classic cognitive stimulation (CCS) then Condition virtual reality (VR)
+Condition virtual reality (VR) then Condition classic cognitive stimulation (CCS)
+Continuous positive airway pressure (CPAP)
+DBS
+Deep Brain Stimulation
+Deep brain
+Deep brain stimulation
+Denmark)
+Digital Memory Notebook (DMN) Application
+Documentaries with delayed Computerized Cognitive Training
+Dysphagia Detection System
+ECOCAPTURE
+EEG and CSF biomarkers
+EEG scan
+End tidal CO2 monitoring
+Excitation
+Exercise Education
+Exoskeleton exercise
+Experimental 1
+Eye-Tracking / Neuropsychological evaluations
+FUS
+Facilitate tDCS + CR
+Falun
+Focused Transcranial Ultrasound
+Focused Ultrasound
+Foot Mechanical Stimulation (GONDOLA)
+GammaSense Stimulation System (Active Settings)
+GammaSense Stimulation System (Sham Settings)
+GammaSense Stimulation System (non-invasive
+HTL0018318
+Heart rate monitoring
+High level of signal manipulation
+High-definition transcranial direct current stimulation
+Home Sleep Apnea Test
+Home-based Computer Kiosk
+ICM_APATHY_TASKS
+In-Home Technology System and Questionnaires
+In-Person Nutritional Counseling by a Registered Dietitian
+In-home technology
+In-laboratory polysomnography
+Inhibition
+Interactive Voice Response (IVR)
+Lighting Intervention
+Limited in-home technology
+Listed for each disorder below
+Low level of signal manipulation
+MHSL- SleepBand
+MRgFUS
+MagVenture MagProX100 stimulator (MagVenture
+Mail and Live Phone
+Midodrine or atomoxetine pill
+MindMate + Health Coaching
+Mobile Phone Application Assessments
+MyTAP oral appliance plus mouth shield
+Nautilus NeuroWaveTM System
+Neurohormonal mechanisms
+Neuropsychological examination
+Neuropsychological tests
+Neurostar
+Neurostar repetitive transcranial magnetic stimulator
+No research related technology based social interactions
+No treatment
+Non-invasive
+Non-invasive Brain Stimulation
+Noninvasive Brain Stimulation
+Nutritional counseling using an e-Health Application
+Palliative Care
+Pittsburgh Compound B [11C]-PIB
+Pupillometry
+Questionnaires
+RTMS
+Receive tDCS+CR
+Renew NCP-5
+Repetitive
+Repetitive Transcranial Magnetic Stimulation
+Repetitive Transcranial Magnetic Stimulation (rTMS)
+Repetitive transcranial magnetic stimulation
+Robot-Assisted Gait Training (RAGT)
+SHAM
+Sham
+Sham (for transcranial direct current stimulation)
+Sham Stimulation
+Sham TMS
+Sham Transcranial Alternating Current Stimulation
+Sham Transcranial Direct Current Stimulation (tDCS)
+Sham Transcranial Magnetic Stimulation
+Sham acoustic stimulation
+Sham rTMS
+Sham stimulation
+Sham tDCS
+Sham tPBM-2.0
+Sham transcranial direct current stimulation
+Sham-TMS
+SmartPrompt smartphone application
+Standard Assessments
+Standard exercise
+Stimulation
+Supplementary Neuropsychological Assessment - Parkinson's Disease
+TMS
+TSB Axo
+Tailored Lighting Intervention
+Technology based social interactions
+The NeuroCatch™ Platform (NCP)
+Traditional Evaluation Instruments
+Transcranial 
+Transcranial Alternating Current Stimulation (tACS)
+Transcranial Direct Current Stimulation
+Transcranial Direct Current Stimulation (tDCS)
+Transcranial ExAblate System
+Transcranial Magnetic Stimulation
+Transcranial Magnetic Stimulation (TMS)
+Transcranial direct current stimulation
+Transcranial direct current stimulation (tDCS)
+Transcranial direct current stimulation (tDCS) Soterix Medical Inc. tDCS unit
+Transcranial doppler ultrasonography
+Transcranial magnetic stimulation
+Treadmill Gait Training (TT)
+Treatment as usual
+TruScan Neurofeedback
+Ultrasound
+Ursodiol
+Virtual Kitchen Training
+Yband (YDT-201N)
+[18F]MNI-958
+active Deep TMS
+active tDCS
+cognitive tests
+intermittent theta burst stimulation
+non-significant risk)
+rTMS
+rTMS treatment
+rTMS with H-coil
+real anodal transcranial direct current stimulation
+real anodal transcranial direct current stimulation (tDCS)
+real transcranial alternating current stimulation
+repetitive transcranial magnetic stimulation
+repetitive transcranial magnetic stimulation (rTMS)
+sham
+sham Deep TMS
+sham stimulation
+sham tDCS
+sham transcranial direct current stimulation (tDCS)
+sham transcranial electric current stimulation
+stimulation OFF
+stimulation ON
+tDCS
+tSMS
+transcranial Direct Current Stimulation (tDCS)
+transcranial alternating current stimulation (tACS)
+transcranial direct current stimulation
+transcranial direct current stimulation (tDCS)
+transcranial magnetic stimulation
+up to three drugs per disorder (too many characters to list in this field; see Intervention Description)
+voice recordings

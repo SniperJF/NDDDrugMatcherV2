@@ -1,0 +1,35 @@
+#Ignore these files
+*.pyc
+
+5YEAR-RESULTS/
+10YEAR-RESULTS/
+output/
+queries/
+input/old-unused/
+
+#Except for the README.md files in the directories (used to make dir too)
+!queries/
+queries/*
+!queries/README.md
+#!queries/finalqueries-2021-06-06.zip #refer to V1 to get this
+
+!output/
+output/*
+!output/classified-tables/
+output/classified-tables/*
+!output/classified-tables/README.md
+
+!output/eligibility-criteria/
+output/eligibility-criteria/*
+!output/eligibility-criteria/README.md
+
+!output/final-tables/
+output/final-tables/*
+!output/final-tables/hyperlinked
+output/final-tables/hyperlinked/*
+!output/final-tables/hyperlinked/README.md
+
+!output/json-tables/
+output/json-tables/*
+!output/json-tables/README.md
+

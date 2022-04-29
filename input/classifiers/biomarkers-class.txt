@@ -1,0 +1,165 @@
+11C-ER176
+11C-PBR28
+11C-PiB
+11C-UCB-J PET-CT
+11C-methylreboxetine
+13C6 Leucine
+13N-Ammonia
+18-FDG PET
+18F-AV-133
+18F-AV-1451
+18F-AV-1451 (Tau-PET tracer)
+18F-AV-45
+18F- DTBZ
+18F-DTBZ
+18F-Dopa
+18F-Dopamne
+18F-FDG
+18F-MK-6240
+APOE genotype
+APOE genotyping
+ASL-MRI
+AV1451 Tau
+Aftobetin-HCl
+All Subjects
+Amyvid PET Scan
+ApoE
+Beta amyloid imaging
+Biomarker
+Biomarker Data Collection
+Biomarker assay
+Brain PET scan
+Brain imaging examination MRI
+C-11 PiB
+CSF
+Carbidopa 200mg oral dose
+Cerebral imaging
+Cognitive evaluation
+Comprehensive Ophthalmic Examination
+Contrast Sensitivity
+DVA
+DaTSCAN™ Ioflupane (123I) Injection
+DaTscan
+Desipramine (DMI)
+EEG recording
+Elecsys (Roche) Abeta42
+Electrical Brainstem Responses
+Entacapone 400mg oral dose
+F-18
+F-18 AV 1451
+F-18 FDG
+F-18 THK-5351
+F18-AV-45
+FDG-PET
+FDOCT
+Florbetaben
+Florbetapir F 18
+Florbetapir F 18 PET Scan
+Flortaucipir
+Flortaucipir F18
+FluoroTau
+Fluorodeoxyglucose
+Flutemetamol (18F) Injection
+Flutemetamol (Vizamyl)
+Flutemetamol F18 Injection
+Fundus Photography
+GE180 PET Scan
+Gait Assessment
+H215O PET
+I-123 Ioflupane solution injection prior to SPECT scan (DaTscan)
+LY3191748
+Lodosyn
+Lumbar punction
+Lumipulse (Fujirebio) Abeta42
+MRI Brain Imaging
+MRI Scan
+MRI acquisition
+MRI and CSF
+MRI exam of the brain
+MRI imaging
+MRI scan
+Magnetic Resonance Imaging (MRI)
+Mental Health Assessment and Computerized Cognitive Test
+Neuraceq
+Neurological assessments
+Neuropsychiatric testing
+Noninvasive Retinal Amyloid Imaging (NRAI)
+Observational Study
+Olfactory Tests
+Ophthalmological exam
+Optical Coherence Tomography Angiography (OCTA) Imaging
+PET Scan
+PET scan
+PET scan & fMRI
+Pattern ERG
+Pittsburgh Compound B (C-11 PiB)
+Polysomnogram
+Positron Emission Tomography
+Positron Emission Tomography (PET)
+Positron emission tomography
+Pramlintide challenge test
+Radiopharmaceuticals
+Retinal Imaging
+Retinal fundus photography
+Saliva samples
+Sapphire II
+Siemens "Biograph mMR" PET-MR (3T)
+Single photon emission computed tomography (SPECT) scan
+Spectral-Domain Optical Coherence Tomography (SD-OCT)
+T807
+T807 PET scan
+Tau (18-F-AV-1451)
+Ttau and Ptau
+Visual Deprivation
+Vizamyl
+[11C]MPC6827
+[123I]-IBVM
+[123I]CLINDE
+[123I]MNI-420
+[123I]β-CIT
+[18F] CFPyPB
+[18F] Flutemetamol
+[18F] PBR06
+[18F]-FEPPA
+[18F]-PI2620
+[18F]-RO6958948
+[18F]AV-1451
+[18F]AV-45 PET
+[18F]DPA-714 PET/ [18F]AV-45 PET/neuropsychological assessment
+[18F]FDOPA
+[18F]FPEB
+[18F]Flutemetamol
+[18F]MK-6240
+[18F]MNI-1126
+[18F]MNI-815 (MNI-815)
+[18F]NAV4694
+[18F]PI-2620
+[18F]T807 ([18F]MNI-777)
+[18F]THK-5351
+[18F]flutemetamol PET scan
+[F-18]FDDNP-PET
+[F-18]PBR06
+[18F] PBR111
+[18F]PBR06
+[F-18]T807
+[F18]-FDDNP
+[F18]T807
+administration of stable isotope-labelled leucine-
+behavioral evaluations
+biomarkers
+blood and urine sampling
+characterization
+clinical measures of disease severity and progression
+collection of CSF
+colonoscopy or rectosigmoidoscopy
+florbetapir (18F)
+florbetapir 18F
+florbetapir F 18
+multimodal retinal imaging
+neuropsychologic assessment
+non-invasive retinal imaging
+punch skin biopsy
+saliva
+urine
+~160 MBq
+~185 MBq
