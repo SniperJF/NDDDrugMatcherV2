@@ -34,7 +34,7 @@ with open("queries/chartsv4A.csv") as csv_file:
         #Since we want time range 2010 to 2021 we are going to splice it from the string. Example 2018-06-23 we will take the
         #2018 which is first 4 characters , cast to number, then compare if that value is in our range! else continue
         #if int(row[5][0:4]) < 2010 or int(row[5][0:4]) > 2021: #so 2009 or 2022 would not show up
-        if int(row[5][0:4]) < 2000 or int(row[5][0:4]) > 2021: #so 1999 or 2022 would not show up #Changed range for demographic study 00-21
+        if int(row[10][0:4]) < 2000 or int(row[10][0:4]) > 2021: #Changed range for demographic study, using FIRST POSTED DATE 2000-2021
             ignoretrials.add(row[0])
             continue #Remove these three lines to disable dating limits
 
