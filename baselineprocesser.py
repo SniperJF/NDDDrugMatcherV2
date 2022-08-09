@@ -136,25 +136,69 @@ def generateDemographics(matchedCTO):
     #print("Total Trials of Interest with Demographics:",len(seldemCTO)) #407 AD/MCI trials
 
     #Get all categories:
-    sexCategories       = set() #Store all categories
-    ethnicityCategories = set() #Store all categories
-    raceCategories      = set() #Store all categories
+    sexOGCategories       = set() #Store all categories
+    ethnicityOGCategories = set() #Store all categories
+    raceOGCategories      = set() #Store all categories
+    toPop                 = set() #can't pop during iteration so will store here pop list
+
+    categoryClasses = {}
+    loadSREcategories(categoryClasses)
+
     for nctid in seldemCTO:
-        for i in seldemCTO[nctid].baseline_measurements['Sex']:
-            sexCategories.add(i)
-        for i in seldemCTO[nctid].baseline_measurements['Ethnicity']:
-            ethnicityCategories.add(i)
-        for i in seldemCTO[nctid].baseline_measurements['Race']:
-            raceCategories.add(i)
+        for i in list(seldemCTO[nctid].baseline_measurements['Sex']):
+            sexOGCategories.add(i)
+            if i in 'gender unknown, unknown, or unspecified, other':
+                seldemCTO[nctid].baseline_measurements['Sex']['unknown'] = seldemCTO[nctid].baseline_measurements['Sex'][i]
+                seldemCTO[nctid].baseline_measurements['Sex'].pop(i, None)
+        for i in seldemCTO[nctid].baseline_measurements['Race']:         #Nothing needed here since these match 1:1
+            raceOGCategories.add(i)
+        for i in list(seldemCTO[nctid].baseline_measurements['Ethnicity']):
+            ethnicityOGCategories.add(i)
+            #get the race/ethnicity categories from csv this tag belongs to
+            try:
+                raceTag = categoryClasses[i][0]
+                ethnicityTag = categoryClasses[i][1]
+            except KeyError as ke:
+                print("Invalid Key, Check CSV File and add classification for:", ke)
+                continue
+            if ethnicityTag == "unspecified": #Not an ethnicity tag, so add only for race and move on, remove it from ethnicity
+                seldemCTO[nctid].baseline_measurements['Race'][raceTag] = seldemCTO[nctid].baseline_measurements['Ethnicity'][i]
+                seldemCTO[nctid].baseline_measurements['Ethnicity'].pop(i, None) #Remove old  
+            else: #Is an ethnicity tag, might be a race tag too
+                topop = False
+                if ethnicityTag != i: #Skip stuff that is equal to optimize.
+                    seldemCTO[nctid].baseline_measurements['Ethnicity'][ethnicityTag] = seldemCTO[nctid].baseline_measurements['Ethnicity'][i]
+                    topop = True
+                if raceTag != 'unknown or not reported':
+                    seldemCTO[nctid].baseline_measurements['Race'][raceTag] = seldemCTO[nctid].baseline_measurements['Ethnicity'][i]
+                    topop = True
+                if topop:
+                    seldemCTO[nctid].baseline_measurements['Ethnicity'].pop(i, None) #Remove only after we are done using it
+
+
+    #Set Predefined Categories by Dr. Cummings and Dr. Samantha John
+    #"Biological Sex at Birth"
+    sexCleanCategories       = set(['male','female','other','unknown'])
+    #"Ethnicities"
+    ethnicityCleanCategories = set(['hispanic, latino, or spanish origin', 'not of hispanic, latino, or spanish origin', 'unspecified'])
+    #"Race"
+    raceCleanCategories      = set(['white', 'black or african american', 'american indian or alaska native', 'asian', 
+                                    'native hawaiian or other pacific islander', 'more than one race','unknown or not reported'])
+    #Other, unknown, unspecified race (includes categories with multiple interpretations)
+
+    #Error Checking:
+    if raceOGCategories != raceCleanCategories:
+        print("Warning: Race Unmatched")
+    
 
     #Create main list holding demograhpics for each trial
     demographicTable = [] #will Hold table of Demographic Data. Organized as follows:
     #NCTID, HyperlinkedNCTID, Condition, Sex/Races/Ethnicities in the order of columnNames
-    columnNames = sorted(sexCategories) + sorted(ethnicityCategories) + sorted(raceCategories) #First Row and Key
+    columnNames = sorted(sexCleanCategories) + sorted(ethnicityCleanCategories) + sorted(raceCleanCategories) #First Row and Key
     precollabel = [] #Labels the Type above the columnName
-    for i in sorted(sexCategories): precollabel.append('Sex')
-    for i in sorted(ethnicityCategories): precollabel.append('Ethnicity')
-    for i in sorted(raceCategories): precollabel.append('Race')
+    for i in sorted(sexCleanCategories): precollabel.append('Sex')
+    for i in sorted(ethnicityCleanCategories): precollabel.append('Ethnicity')
+    for i in sorted(raceCleanCategories): precollabel.append('Race')
 
     #Main data
     for nctid in seldemCTO:
@@ -175,29 +219,29 @@ def generateDemographics(matchedCTO):
         demographicTable.append(currRow)
     
     #Add Aggregate Columns of each row (so like total of all ethnicities, etc)
-    precollabel.insert(len(sexCategories)+len(ethnicityCategories)+len(raceCategories), "Race Total")
-    precollabel.insert(len(sexCategories)+len(ethnicityCategories), "Ethnicity Total")
-    precollabel.insert(len(sexCategories), "Sex Total")
-    columnNames.insert(len(sexCategories)+len(ethnicityCategories)+len(raceCategories), "Race Total")
-    columnNames.insert(len(sexCategories)+len(ethnicityCategories), "Ethnicity Total")
-    columnNames.insert(len(sexCategories), "Sex Total")
+    precollabel.insert(len(sexCleanCategories)+len(ethnicityCleanCategories)+len(raceCleanCategories), "Race Total")
+    precollabel.insert(len(sexCleanCategories)+len(ethnicityCleanCategories), "Ethnicity Total")
+    precollabel.insert(len(sexCleanCategories), "Sex Total")
+    columnNames.insert(len(sexCleanCategories)+len(ethnicityCleanCategories)+len(raceCleanCategories), "Race Total")
+    columnNames.insert(len(sexCleanCategories)+len(ethnicityCleanCategories), "Ethnicity Total")
+    columnNames.insert(len(sexCleanCategories), "Sex Total")
     for i in range(len(demographicTable)):
         sumS = 0
         sumR = 0
         sumE = 0
-        for j in range(3,len(sexCategories)+3): 
+        for j in range(3,len(sexCleanCategories)+3): 
             if demographicTable[i][j] != '':
                 sumS += demographicTable[i][j]
-        for j in range(len(sexCategories)+3,len(sexCategories)+len(ethnicityCategories)+3): 
+        for j in range(len(sexCleanCategories)+3,len(sexCleanCategories)+len(ethnicityCleanCategories)+3): 
             if demographicTable[i][j] != '':
                 sumE += demographicTable[i][j]
-        for j in range(len(sexCategories)+len(ethnicityCategories)+3,
-                       len(sexCategories)+len(ethnicityCategories)+len(raceCategories)+3): 
+        for j in range(len(sexCleanCategories)+len(ethnicityCleanCategories)+3,
+                       len(sexCleanCategories)+len(ethnicityCleanCategories)+len(raceCleanCategories)+3): 
             if demographicTable[i][j] != '':            
                 sumR += demographicTable[i][j]        
-        demographicTable[i].insert(len(raceCategories)+len(ethnicityCategories)+len(sexCategories)+3,sumR)
-        demographicTable[i].insert(len(sexCategories)+len(ethnicityCategories)+3,sumE)
-        demographicTable[i].insert(len(sexCategories)+3,sumS)
+        demographicTable[i].insert(len(raceCleanCategories)+len(ethnicityCleanCategories)+len(sexCleanCategories)+3,sumR)
+        demographicTable[i].insert(len(sexCleanCategories)+len(ethnicityCleanCategories)+3,sumE)
+        demographicTable[i].insert(len(sexCleanCategories)+3,sumS)
     #Sum Column Totals for Aggregation
     colTotals = []
     for i in range(3,len(demographicTable[0])-2): #Skip first 3 and last 2
@@ -221,15 +265,15 @@ def generateDemographics(matchedCTO):
         outfile.writerow([]) #empty Line
         outfile.writerow(['Categories:'])
         outfile.writerow(['Sex:'])
-        for entry in sorted(sexCategories):
+        for entry in sorted(sexCleanCategories):
             outfile.writerow([entry])
         outfile.writerow([]) #empty Line
         outfile.writerow(['Ethnicity:'])
-        for entry in sorted(ethnicityCategories):
+        for entry in sorted(ethnicityCleanCategories):
             outfile.writerow([entry])
         outfile.writerow([]) #empty Line
         outfile.writerow(['Race:'])
-        for entry in sorted(raceCategories):
+        for entry in sorted(raceCleanCategories):
             outfile.writerow([entry])
         outfile.writerow([]) #empty Line
         outfile.writerow(['Demographics Available for Each Trial by Type:'])
@@ -260,3 +304,21 @@ def baselinemeasurenddfilter(allNCTIDs): #Requires a set containing all NCTIDs w
     with open('output/nddbaselinemeasure.csv', 'w', newline='') as csv_outfile:
         outfile = csv.writer(csv_outfile)
         outfile.writerows(sorted_nddbaselinemeasure)
+
+#Loads CSV File containing the classification for all the variations in sex, race, and ethnicity categories.
+# Stores it in a dictionary where each variation in one of is key. contents is the race and ethnicity that key belongs to
+# Example: caucasian, white, unspecified --->  caucasian is stored as Race: white, Ethnicity: Unspecified. (but all lower case)
+def loadSREcategories(categoryClasses):
+    rowCount = -1 #Skip first row
+    with open("input/demographics/srecategories.csv") as csv_file:
+        csv_data = csv.reader(csv_file, delimiter=',')
+        for row in csv_data:
+            rowCount += 1
+            if rowCount == 0: 
+                continue #skip first row
+            #col 0 is original tag, col 1 is clean race tag, col 2 is ethnicity tag
+            categoryClasses[row[0].lower()] = [row[1].lower(), row[2].lower()] 
+    #return categoryClasses
+#End Function
+
+#End File
