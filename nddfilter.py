@@ -244,4 +244,33 @@ with open('output/ecnctidlist.csv', 'w', newline='') as csv_outfile:
 from baselineprocesser import baselinemeasurenddfilter
 baselinemeasurenddfilter(matchnctid)
 
+
+#Countries chartsv4F. Keeps only NDD related NCTIDs, writes to file for further processing.
+nddcountries = [] #countries.nct_id, countries.name, countries.removed
+with open("queries/chartsv4F.csv") as csv_file:
+    csv_data = csv.reader(csv_file, delimiter=',')
+    for row in csv_data:
+        if row[1] in allNCTIDs: #compare NCTID of allNCTIDs with the row in chartsv4F if match then this is from a trial we care about (NDD)
+            nddcountries.append(row) #if we found a match in nddtrials we insert and move on to next row in chartsv4F
+#next we sort the resulting list by NCTID
+sorted_nddcountries = sorted(nddcountries, key=lambda row: row[0], reverse=False) #sort by nctid, stable sort (ROW 0 is NCTID IN THIS CASE!)
+#Save to file for further processing
+with open('output/nddcountries.csv', 'w', newline='') as csv_outfile:
+    outfile = csv.writer(csv_outfile)
+    outfile.writerows(sorted_nddcountries)
+
+#Sponsors chartsV4G. Keeps only NDD related NCTIDs, writes to file for further processing.
+nddsponsors = [] #sponsors.nct_id, sponsors.agency_class, sponsors.lead_or_collaborator, sponsors.name
+with open("queries/chartsv4F.csv") as csv_file:
+    csv_data = csv.reader(csv_file, delimiter=',')
+    for row in csv_data:
+        if row[1] in allNCTIDs: #compare NCTID of allNCTIDs with the row in chartsv4F if match then this is from a trial we care about (NDD)
+            nddsponsors .append(row) #if we found a match in nddtrials we insert and move on to next row in chartsv4F
+#next we sort the resulting list by NCTID
+sorted_nddsponsors  = sorted(nddsponsors , key=lambda row: row[0], reverse=False) #sort by nctid, stable sort (ROW 0 is NCTID IN THIS CASE!)
+#Save to file for further processing
+with open('output/nddsponsors .csv', 'w', newline='') as csv_outfile:
+    outfile = csv.writer(csv_outfile)
+    outfile.writerows(sorted_nddsponsors )
+
 #END CODE
