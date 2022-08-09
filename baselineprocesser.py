@@ -214,8 +214,11 @@ def generateDemographics(matchedCTO):
                 currRow.append(seldemCTO[nctid].baseline_measurements['Race'][col])
             else:
                 currRow.append('') #No entry in this column for this row
+        currRow.append(seldemCTO[nctid].firstpostedDate)
         currRow.append(seldemCTO[nctid].lastpostedDate)
         currRow.append(seldemCTO[nctid].title)
+        currRow.append(seldemCTO[nctid].getInterventionDrugsStr()) #Try to uncomment and add these two new columns
+        #TODO uncomment above do that, also need to get location data with a query, prob will excel it.
         demographicTable.append(currRow)
     
     #Add Aggregate Columns of each row (so like total of all ethnicities, etc)
@@ -244,7 +247,7 @@ def generateDemographics(matchedCTO):
         demographicTable[i].insert(len(sexCleanCategories)+3,sumS)
     #Sum Column Totals for Aggregation
     colTotals = []
-    for i in range(3,len(demographicTable[0])-2): #Skip first 3 and last 2
+    for i in range(3,len(demographicTable[0])-4): #Skip first 3 and last 2
         rowTotal = 0
         for row in demographicTable:
             if row[i] != '':
@@ -279,7 +282,8 @@ def generateDemographics(matchedCTO):
         outfile.writerow(['Demographics Available for Each Trial by Type:'])
         outfile.writerow(['Total Columns: '+str(len(columnNames))])
         outfile.writerow(['Type of Column', '', '']+precollabel+['','']) #Columns of Big Table
-        outfile.writerow(['NCTID', 'NCTID HyperLink', 'Condition']+columnNames+['Last Posted Date','Trial Title']) #Columns of Big Table
+        outfile.writerow(['NCTID', 'NCTID HyperLink', 'Condition']+columnNames+['First Posted Date', 'Last Posted Date',
+                          'Trial Title', 'Intervention(s)']) #Columns of Big Table
         outfile.writerow(['Totals', str(len(demographicTable)), 'Trials']+colTotals+['','']) #Columns of Big Table
         outfile.writerows(demographicTable) #Write all rows 
 
