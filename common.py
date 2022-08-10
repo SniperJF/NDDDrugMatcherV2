@@ -171,6 +171,8 @@ class jfc:
             self.designTimeFrame = "" #We will add this later
             self.designMeasures = [] #We will add this later
             self.designDescription = [] #We will add this later
+            self.countries = [] #We will add this later
+            self.sponsors = [] #We will add this later
             self.firstpostedDate = firstpostedDate
             self.studyStatus = studyStatus
             self.outcomeTitle = [] #we will add these later
@@ -320,6 +322,29 @@ class jfc:
                         #if self.otherIntervention[i].lower() != 'placebo': #get rid of placebo
                            finalstr += ", " + self.otherIntervention[i]
             return finalstr
+        def getCountryDataStr(self): #This function returns a nicely formatted string with country data
+            if len(self.countries) == 0:
+                return "No Country Data Available" #For no data
+            finalcstr = ""
+            removedcountries = ""
+            for i in self.countries:
+                if not i[1]: #if country removed is set to false just add it
+                    finalcstr += i[0] + ", "
+                else:
+                    removedcountries += i[0] + ", "
+            if finalcstr == "": #This trial has no countries added, just removed so write word NONE to flag it
+                finalcstr += "NONE, " #adding comma and space just for consistency
+            if removedcountries != "": #we have removed countries, append at end
+                finalcstr = finalcstr[:-2] #removed extra comma and space
+                finalcstr += " / Removed Countries: " + removedcountries #add removed countries
+            return finalcstr[:-2] #removed extra comma and space
+        def getSponsorDataStr(self): #This function returns all sponsor data smashed together as a big string. Kinda messy
+            if len(self.sponsors) == 0:
+                return "No Sponsor Data Available" #For no data
+            finalsponsorstr = ""
+            for i in self.sponsors: #Agency Class, Lead or Collab, Name
+                finalsponsorstr += i[0] + ", " + i[1] + ", " + i[2] + "; "
+            return finalsponsorstr[:-2]
         @staticmethod
         def getOnlyDateYear(d):  #Static Function gets only the year from a date string (i.e: last posted date or first posted date)
             return d[0:4]
@@ -355,6 +380,10 @@ class jfc:
             if len(self.nddInEligCriteria) > 0: #For NDD in Eligibility Criteria
                 printstr += "NDD Listed in Eligibility Criteria that do not appear in Condition(s):\n"
                 printstr += self.getNDDInEligCriteriaStr() + "\n"
+            if self.hasDemographics: #For Demographics, for now just tells if we have. Not doing detailed writing of it here.
+                printstr += "Trial Has Demographics Data.\n"
+            printstr += "Country Data: " + self.getCountryDataStr() + "\n" #Country data
+            printstr += "Sponsor Data: " + self.getSponsorDataStr() + "\n" #Sponsor Data
             return printstr
     #End clinicalTrial class
     class drugClinicalTrialSet: #Class I use instead of a dictionary for Tables 1 and 3

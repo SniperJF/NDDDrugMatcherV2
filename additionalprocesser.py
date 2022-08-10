@@ -29,14 +29,38 @@ def sponsornddfilter(matchnctid):
     #next we sort the resulting list by NCTID
     sorted_nddsponsors  = sorted(nddsponsors , key=lambda row: row[0], reverse=False) #sort by nctid, stable sort (ROW 0 is NCTID IN THIS CASE!)
     #Save to file for further processing
-    with open('output/nddsponsors .csv', 'w', newline='') as csv_outfile:
+    with open('output/nddsponsors.csv', 'w', newline='') as csv_outfile:
         outfile = csv.writer(csv_outfile)
         outfile.writerows(sorted_nddsponsors)
 #End Function
 
-def countryprocessor(matchedCTO):
-    pass
+#Function to insert Country data as a list that is in the CTO
+def countryprocessor(matchedCTO): #NCTID, Country Name, t/f representing if country has been removed (true if removed)
+    #First load the data from the file
+    nddcountries = []  #chartsv4F baseline measurements
+    with open("output/nddcountries.csv") as csv_file:
+        csv_data = csv.reader(csv_file, delimiter=',')
+        for row in csv_data:
+            nddcountries.append(row)
+    #Now I will try to insert each row into the appropriate trial. I'm just going to insert them as lists inside of lists.
+    #So by end it will look like this countries = [ ['USA', True], ['UK', False] ].
+    for row in nddcountries:
+        matchedCTO[row[0]].countries.append([ row[1], True if row[2]=='t' else False ])
+#End Function
 
-def sponsorprocessor(matchedCTO):
-    pass
+#Function to insert Country data as a list that is in the CTO
+def sponsorprocessor(matchedCTO): #NCTID, Agency Class (NIH/Industry etc), Sponsor lead or collaborator status, Sponsors Name
+    #First load the data from the file
+    nddsponsors = []  #chartsv4F baseline measurements
+    with open("output/nddsponsors.csv") as csv_file:
+        csv_data = csv.reader(csv_file, delimiter=',')
+        for row in csv_data:
+            nddsponsors.append(row)
+    #Now I will try to insert each row into the appropriate trial. I'm just going to insert them as lists inside of lists.
+    #So by end it will look like this:
+    #sponsors = [ ['NIH', 'lead', 'National center for blah'], ['NIH', 'collaborator', 'National institute of blah'] ].
+    for row in nddsponsors:
+        matchedCTO[row[0]].sponsors.append([row[1], row[2], row[3]])
+#End Function
+
 #End File

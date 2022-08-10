@@ -198,6 +198,12 @@ with open('output/eligibility-criteria/ecnewtrials.csv', 'w', newline='') as csv
     outfile.writerows(ecnewtrials)    
 #End New Code for Eligibility Critera
 
+#Code to add country and sponsor data to trials
+from additionalprocesser import countryprocessor
+countryprocessor(matchedCTO)
+from additionalprocesser import sponsorprocessor
+sponsorprocessor(matchedCTO)
+
 #New Code for baseline measurements (demographics project)
 #TODO need to add to the elgibility criteria raw trials something similar for demographics
 from baselineprocesser import baselinemeasureprocessor
