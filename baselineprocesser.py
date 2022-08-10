@@ -167,7 +167,12 @@ def generateDemographics(matchedCTO):
             else: #Is an ethnicity tag, might be a race tag too
                 topop = False
                 if ethnicityTag != i: #Skip stuff that is equal to optimize.
-                    seldemCTO[nctid].baseline_measurements['Ethnicity'][ethnicityTag] = seldemCTO[nctid].baseline_measurements['Ethnicity'][i]
+                    #This code is for some weird cases where ethnicity for hispanics is split by race, example: NCT00291161
+                    if ethnicityTag in seldemCTO[nctid].baseline_measurements['Ethnicity']: #Already exist so we add to current sum
+                        seldemCTO[nctid].baseline_measurements['Ethnicity'][ethnicityTag] = \
+                        seldemCTO[nctid].baseline_measurements['Ethnicity'][ethnicityTag] + seldemCTO[nctid].baseline_measurements['Ethnicity'][i]
+                    else: #doesnt exist so just create it and put value
+                        seldemCTO[nctid].baseline_measurements['Ethnicity'][ethnicityTag] = seldemCTO[nctid].baseline_measurements['Ethnicity'][i]
                     topop = True
                 if raceTag != 'unknown or not reported':
                     seldemCTO[nctid].baseline_measurements['Race'][raceTag] = seldemCTO[nctid].baseline_measurements['Ethnicity'][i]
