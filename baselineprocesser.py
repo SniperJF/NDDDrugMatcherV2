@@ -285,7 +285,7 @@ def generateDemographics(matchedCTO):
         outfile.writerow(['Total Columns: '+str(len(columnNames))])
         outfile.writerow(['Type of Column', '', '']+precollabel+['','']) #Columns of Big Table
         outfile.writerow(['NCTID', 'NCTID HyperLink', 'Condition']+columnNames+['First Posted Date', 'Last Posted Date',
-                          'Countries', 'Type: US-ONLY, NON-US, GLOBAL (US and at least 1 Non-US country), or NONE (no country listed)'
+                          'Countries', 'Type: US-ONLY, NON-US, GLOBAL (US and at least 1 Non-US country), or NONE (no country listed)',
                           'Sponsors', 'Trial Title', 'Intervention(s)']) #Columns of Big Table
         outfile.writerow(['Totals', str(len(demographicTable)), 'Trials']+colTotals+['','']) #Columns of Big Table
         outfile.writerows(demographicTable) #Write all rows 
