@@ -46,6 +46,22 @@ def countryprocessor(matchedCTO): #NCTID, Country Name, t/f representing if coun
     #So by end it will look like this countries = [ ['USA', True], ['UK', False] ].
     for row in nddcountries:
         matchedCTO[row[0]].countries.append([ row[1], True if row[2]=='t' else False ])
+    #Next let's do countryType. This field contains a string indiciating whether the trials are
+    #US-ONLY, NON-US, GLOBAL (US and at least 1 Non-US country), or NONE (no country listed). Useful for splitting table into these groups
+    for nctid in matchedCTO:
+        if len(matchedCTO[nctid].countries) > 0: #We have something to look at 
+            hasUS = False
+            hasNonUS = False
+            for entry in matchedCTO[nctid].countries: #Check each country
+                if not entry[1]: #if country removed is set to false add it , else skip if it is true
+                    if entry[0] == "United States": hasUS = True
+                    else: hasNonUS = True
+                if hasUS and hasNonUS: break #Once we got both no need to keep going, optimization.
+            #Now to add the correct tag based on our flags:
+            if hasUS and hasNonUS: matchedCTO[nctid].countryType = "GLOBAL"
+            elif hasUS and not hasNonUS: matchedCTO[nctid].countryType = "US-ONLY"
+            elif hasNonUS and not hasUS: matchedCTO[nctid].countryType = "NON-US"
+            else: matchedCTO[nctid].countryType = "NONE"
 #End Function
 
 #Function to insert Country data as a list that is in the CTO

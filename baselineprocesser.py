@@ -148,8 +148,8 @@ def generateDemographics(matchedCTO):
         for i in list(seldemCTO[nctid].baseline_measurements['Sex']):
             sexOGCategories.add(i)
             if i in 'gender unknown, unknown, or unspecified, other':
-                seldemCTO[nctid].baseline_measurements['Sex']['unknown'] = seldemCTO[nctid].baseline_measurements['Sex'][i]
-                seldemCTO[nctid].baseline_measurements['Sex'].pop(i, None)
+              seldemCTO[nctid].baseline_measurements['Sex']['unspecified, gender unknown, or other'] = seldemCTO[nctid].baseline_measurements['Sex'][i]
+              seldemCTO[nctid].baseline_measurements['Sex'].pop(i, None)
         for i in seldemCTO[nctid].baseline_measurements['Race']:         #Nothing needed here since these match 1:1
             raceOGCategories.add(i)
         for i in list(seldemCTO[nctid].baseline_measurements['Ethnicity']):
@@ -178,7 +178,7 @@ def generateDemographics(matchedCTO):
 
     #Set Predefined Categories by Dr. Cummings and Dr. Samantha John
     #"Biological Sex at Birth"
-    sexCleanCategories       = set(['male','female','other','unknown'])
+    sexCleanCategories       = set(['male','female','unspecified, gender unknown, or other'])
     #"Ethnicities"
     ethnicityCleanCategories = set(['hispanic, latino, or spanish origin', 'not of hispanic, latino, or spanish origin', 'unspecified'])
     #"Race"
@@ -217,6 +217,7 @@ def generateDemographics(matchedCTO):
         currRow.append(seldemCTO[nctid].firstpostedDate) #Shows first posted date
         currRow.append(seldemCTO[nctid].lastpostedDate)  #shows last posted date
         currRow.append(seldemCTO[nctid].getCountryDataStr()) #Shows Country Data
+        currRow.append(seldemCTO[nctid].countryType) #Shows Country Type String
         currRow.append(seldemCTO[nctid].getSponsorDataStr()) #Shows Sponsor Data
         currRow.append(seldemCTO[nctid].title) #Shows trial title
         currRow.append(seldemCTO[nctid].getInterventionDrugsStr()) #Intervention list added
@@ -248,8 +249,8 @@ def generateDemographics(matchedCTO):
         demographicTable[i].insert(len(sexCleanCategories)+3,sumS)
     #Sum Column Totals for Aggregation
     colTotals = []
-    for i in range(3,len(demographicTable[0])-6): #Skip first 3 and last 6 (Extra rows at end that are other information)
-        rowTotal = 0
+    for i in range(3,len(demographicTable[0])-7): #Skip first 3 and last 7 (Extra rows at end that are other information)
+        rowTotal = 0 #It's important that this^ number here is updated whenever you add an extra column!
         for row in demographicTable:
             if row[i] != '':
                 try:
@@ -284,7 +285,8 @@ def generateDemographics(matchedCTO):
         outfile.writerow(['Total Columns: '+str(len(columnNames))])
         outfile.writerow(['Type of Column', '', '']+precollabel+['','']) #Columns of Big Table
         outfile.writerow(['NCTID', 'NCTID HyperLink', 'Condition']+columnNames+['First Posted Date', 'Last Posted Date',
-                          'Countries', 'Sponsors', 'Trial Title', 'Intervention(s)']) #Columns of Big Table
+                          'Countries', 'Type: US-ONLY, NON-US, GLOBAL (US and at least 1 Non-US country), or NONE (no country listed)'
+                          'Sponsors', 'Trial Title', 'Intervention(s)']) #Columns of Big Table
         outfile.writerow(['Totals', str(len(demographicTable)), 'Trials']+colTotals+['','']) #Columns of Big Table
         outfile.writerows(demographicTable) #Write all rows 
 

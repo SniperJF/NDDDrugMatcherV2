@@ -172,6 +172,7 @@ class jfc:
             self.designMeasures = [] #We will add this later
             self.designDescription = [] #We will add this later
             self.countries = [] #We will add this later
+            self.countryType = "" #We will update this later to indicate if it is US-ONLY/NON-US/GLOBAL/NONE (no country)
             self.sponsors = [] #We will add this later
             self.firstpostedDate = firstpostedDate
             self.studyStatus = studyStatus
@@ -382,7 +383,8 @@ class jfc:
                 printstr += self.getNDDInEligCriteriaStr() + "\n"
             if self.hasDemographics: #For Demographics, for now just tells if we have. Not doing detailed writing of it here.
                 printstr += "Trial Has Demographics Data.\n"
-            printstr += "Country Data: " + self.getCountryDataStr() + "\n" #Country data
+            printstr += "Country Data: " + self.getCountryDataStr() #Country data
+            printstr += ". Type: " + self.countryType + "\n"
             printstr += "Sponsor Data: " + self.getSponsorDataStr() + "\n" #Sponsor Data
             return printstr
     #End clinicalTrial class
