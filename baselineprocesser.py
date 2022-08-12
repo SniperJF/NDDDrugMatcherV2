@@ -266,35 +266,37 @@ def generateDemographics(matchedCTO):
     #TODO do some aggregate data summaries and merge similar tables.
 
     #Generate Report for AD/MCI Demographics
+    headings = [] #Stores copy of the headings we write formatted so we can return them in addition to writing them
     with open('output/ADMCIdemographics.csv', 'w', newline='') as csv_outfile:
         outfile = csv.writer(csv_outfile)
-        outfile.writerow(['Total AD/MCI Trials Checked:'])
-        outfile.writerow([len(selCTO)])
-        outfile.writerow(['Total AD/MCI Trials with Demographics Available:'])
-        outfile.writerow([len(seldemCTO)])
-        outfile.writerow([]) #empty Line
-        outfile.writerow(['Categories:'])
-        outfile.writerow(['Sex:'])
+        headings.append(['Total AD/MCI Trials Checked:'])
+        headings.append([len(selCTO)])
+        headings.append(['Total AD/MCI Trials with Demographics Available:'])
+        headings.append([len(seldemCTO)])
+        headings.append([]) #empty Line
+        headings.append(['Categories:'])
+        headings.append(['Sex:'])
         for entry in sorted(sexCleanCategories):
-            outfile.writerow([entry])
-        outfile.writerow([]) #empty Line
-        outfile.writerow(['Ethnicity:'])
+            headings.append([entry])
+        headings.append([]) #empty Line
+        headings.append(['Ethnicity:'])
         for entry in sorted(ethnicityCleanCategories):
-            outfile.writerow([entry])
-        outfile.writerow([]) #empty Line
-        outfile.writerow(['Race:'])
+            headings.append([entry])
+        headings.append([]) #empty Line
+        headings.append(['Race:'])
         for entry in sorted(raceCleanCategories):
-            outfile.writerow([entry])
-        outfile.writerow([]) #empty Line
-        outfile.writerow(['Demographics Available for Each Trial by Type:'])
-        outfile.writerow(['Total Columns: '+str(len(columnNames))])
-        outfile.writerow(['Type of Column', '', '']+precollabel+['','']) #Columns of Big Table
-        outfile.writerow(['NCTID', 'NCTID HyperLink', 'Condition']+columnNames+['First Posted Date', 'Last Posted Date',
+            headings.append([entry])
+        headings.append([]) #empty Line
+        headings.append(['Demographics Available for Each Trial by Type:'])
+        headings.append(['Total Columns: '+str(len(columnNames))])
+        headings.append(['Type of Column', '', '']+precollabel+['','']) #Columns of Big Table
+        headings.append(['NCTID', 'NCTID HyperLink', 'Condition']+columnNames+['First Posted Date', 'Last Posted Date',
                           'Countries', 'Type: US-ONLY, NON-US, GLOBAL (US and at least 1 Non-US country), or NONE (no country listed)',
                           'Sponsors', 'Trial Title', 'Intervention(s)']) #Columns of Big Table
-        outfile.writerow(['Totals', str(len(demographicTable)), 'Trials']+colTotals+['','']) #Columns of Big Table
+        headings.append(['Totals', str(len(demographicTable)), 'Trials']+colTotals+['','']) #Columns of Big Table
+        outfile.writerows(headings) #Write all headings
         outfile.writerows(demographicTable) #Write all rows 
-
+    return headings, demographicTable #Returns the main table (not headings) so we send it to excel later
 #End Function
 
 #Demographics from baseline_measurements in Clincial Trials (chartsv4E)
