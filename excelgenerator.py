@@ -1,5 +1,6 @@
 #This File is for the functions that write out the final excel spreadsheet with pretty formatting
 import xlsxwriter #Installed using pip install XlsxWriter. See: https://xlsxwriter.readthedocs.io/
+#import openpyxl #For generating pretty charts since XlsxWriter does not do 3D charts. #Installed using pip install openpyxl (Unused for now)
 import time #For versioning our file
 def generateExcelDemographics(demogHeadings, demogTable):
     #First Let's split data into tables we want: T0: US-ONLY Drug, T1: NON-US Drug, T2: GLOBAL Drug, T3: NONE Drug, 
