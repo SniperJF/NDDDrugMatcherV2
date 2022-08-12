@@ -209,7 +209,9 @@ sponsorprocessor(matchedCTO)
 from baselineprocesser import baselinemeasureprocessor
 from baselineprocesser import generateDemographics
 baselinemeasureprocessor(matchedCTO) #adds to standard trials demographic data fields
-generateDemographics(matchedCTO) #Does the rest of the demographics on its own function/file
+demogHeadings, demogTable = generateDemographics(matchedCTO) #Does the rest of the demographics on its own function/file, returns results
+from excelgenerator import generateExcelDemographics #Those results will be sent to another function to make excel data
+generateExcelDemographics(demogHeadings, demogTable) #Generate Final Excel File for Demographic Data
 
 #Test to see if this worked
 #print(matchedCTO["NCT00620191"]) #For Testing the match from the table
