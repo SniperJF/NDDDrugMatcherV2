@@ -79,4 +79,23 @@ def sponsorprocessor(matchedCTO): #NCTID, Agency Class (NIH/Industry etc), Spons
         matchedCTO[row[0]].sponsors.append([row[1], row[2], row[3]])
 #End Function
 
+#Code to import manually curated trial classification, used for the demographic trial
+def demogcuratedprocessor(matchedCTO): #Loads a file , inserts into a new field we made in CTO class
+    #First load the data from the file
+    demographicTrialClass = []  #Contains NCTID and Type of trial: Types are 1: DRUG, B: Biomarker, D: Device 0: Other
+    with open("input/demographics/demogtrialclassifier.csv") as csv_file:
+        csv_data = csv.reader(csv_file, delimiter=',')
+        for row in csv_data:
+            demographicTrialClass.append(row)
+    #Now I will try to insert each row into the appropriate trial. Inserting as simple string
+    for row in demographicTrialClass[1:]: #Skip first row as it is the labels
+        trialType = ""
+        if    row[1] == '1': trialType = 'Drug'
+        elif  row[1] == 'B': trialType = 'Biomarker'
+        elif  row[1] == 'D': trialType = 'Device'
+        elif  row[1] == '0': trialType = 'Other'
+        else: print("Error Unkown Trial Type Passed in Demo Classifier: ", row[1])
+        matchedCTO[row[0]].trialType = trialType
+#End Function
+
 #End File

@@ -182,6 +182,7 @@ class jfc:
             self.nddInEligCriteria = [] #we optionally can add these later, if any, only stores NDD that dont appear already in conditions
             self.baseline_measurements = {} #Dictionary  to hold all the different demographic data for each trial, if we have any
             self.hasDemographics = False #Stores boolean if we have demographic data for this trial (Only result trials have it)
+            self.trialType = "" #We will want to save here the trial type as we discover it.
             #By default we want warnings if condition isn't found in hashmap but can disable for non NDD Trials. So we used default
             self.flexibleCondition = flexibleCondition #paramater set to false so can only actively disable the check
             self.addCondition(condition)
@@ -373,6 +374,7 @@ class jfc:
                         printstr += "Description: " + self.outcomeDescription[i] + "\n"
             else:
                 printstr += "No Outcomes Listed.\n"
+            if self.trialType != "": printstr += "Trial Type: " + self.trialType + "\n"
             #Currently we do not print eligibility criteria, if we want to we can uncomment this to print them
             #if len(self.eligibilityCriteria) > 0:
             #    printstr += "Eligibility Criteria: "

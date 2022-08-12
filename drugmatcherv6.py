@@ -204,6 +204,10 @@ countryprocessor(matchedCTO)
 from additionalprocesser import sponsorprocessor
 sponsorprocessor(matchedCTO)
 
+#Code to import manually curated trial classification, used for the demographic trial but we can expand it later on
+from additionalprocesser import demogcuratedprocessor #note that this is separate from our prior drug classifier
+demogcuratedprocessor(matchedCTO) #We eventually will want to clean up code so we can take advantage of that^ for this.
+
 #New Code for baseline measurements (demographics project)
 #TODO need to add to the elgibility criteria raw trials something similar for demographics
 from baselineprocesser import baselinemeasureprocessor

@@ -224,6 +224,7 @@ def generateDemographics(matchedCTO):
         currRow.append(seldemCTO[nctid].getCountryDataStr()) #Shows Country Data
         currRow.append(seldemCTO[nctid].countryType) #Shows Country Type String
         currRow.append(seldemCTO[nctid].getSponsorDataStr()) #Shows Sponsor Data
+        currRow.append(seldemCTO[nctid].trialType) #Shows Trial Type (Drug, Biomarker, Device, Other)
         currRow.append(seldemCTO[nctid].title) #Shows trial title
         currRow.append(seldemCTO[nctid].getInterventionDrugsStr()) #Intervention list added
         demographicTable.append(currRow)
@@ -253,9 +254,9 @@ def generateDemographics(matchedCTO):
         demographicTable[i].insert(len(sexCleanCategories)+len(ethnicityCleanCategories)+3,sumE)
         demographicTable[i].insert(len(sexCleanCategories)+3,sumS)
     #Sum Column Totals for Aggregation
-    colTotals = []
-    for i in range(3,len(demographicTable[0])-7): #Skip first 3 and last 7 (Extra rows at end that are other information)
-        rowTotal = 0 #It's important that this^ number here is updated whenever you add an extra column!
+    colTotals = [] ################IMPORTANT#LINE#BELOW###################################IMPORTANT LINE BELOW###########
+    for i in range(3,len(demographicTable[0])-8): #Skip first 3 and last 8 (Extra rows at end that are other information)
+        rowTotal = 0 #It's important that this^ number here is updated whenever you add an extra column!!!!!!!!!!!!!!!!!!
         for row in demographicTable:
             if row[i] != '':
                 try:
@@ -290,9 +291,9 @@ def generateDemographics(matchedCTO):
         headings.append(['Demographics Available for Each Trial by Type:'])
         headings.append(['Total Columns: '+str(len(columnNames))])
         headings.append(['Type of Column', '', '']+precollabel+['','']) #Columns of Big Table
-        headings.append(['NCTID', 'NCTID HyperLink', 'Condition']+columnNames+['First Posted Date', 'Last Posted Date',
+        headings.append(['NCTID', 'NCTID HyperLink', 'Condition']+columnNames+['First Posted Date', 'Last Posted Date', 'Sponsors',
                           'Countries', 'Type: US-ONLY, NON-US, GLOBAL (US and at least 1 Non-US country), or NONE (no country listed)',
-                          'Sponsors', 'Trial Title', 'Intervention(s)']) #Columns of Big Table
+                          'Trial Type', 'Trial Title', 'Intervention(s)']) #Columns of Big Table
         headings.append(['Totals', str(len(demographicTable)), 'Trials']+colTotals+['','']) #Columns of Big Table
         outfile.writerows(headings) #Write all headings
         outfile.writerows(demographicTable) #Write all rows 
