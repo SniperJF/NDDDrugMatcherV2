@@ -291,8 +291,8 @@ def generateDemographics(matchedCTO):
         headings.append(['Demographics Available for Each Trial by Type:'])
         headings.append(['Total Columns: '+str(len(columnNames))])
         headings.append(['Type of Column', '', '']+precollabel+['','']) #Columns of Big Table
-        headings.append(['NCTID', 'NCTID HyperLink', 'Condition']+columnNames+['First Posted Date', 'Last Posted Date', 'Sponsors',
-                          'Countries', 'Type: US-ONLY, NON-US, GLOBAL (US and at least 1 Non-US country), or NONE (no country listed)',
+        headings.append(['NCTID', 'NCTID HyperLink', 'Condition']+columnNames+['First Posted Date', 'Last Posted Date',
+                          'Countries', 'Type: US-ONLY, NON-US, GLOBAL (US and at least 1 Non-US country), or NONE (no country listed)', 'Sponsors',
                           'Trial Type', 'Trial Title', 'Intervention(s)']) #Columns of Big Table
         headings.append(['Totals', str(len(demographicTable)), 'Trials']+colTotals+['','']) #Columns of Big Table
         outfile.writerows(headings) #Write all headings
