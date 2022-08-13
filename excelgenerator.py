@@ -51,11 +51,15 @@ def generateExcelDemographics(demogHeadings, demogTable):
             cell_format = workbook.add_format({'bold': True, 'bg_color': '#96DADA', 'border': 1}) #Set header formatting
             worksheet.write_row(rowCounter, 0, row, cell_format) #Write Headings
             rowCounter +=1
+        #For ease of generating graphs we are going to also add totals before data (so they appear twice)
+        cell_format = workbook.add_format({'bold': True, 'bg_color': '#F1B07F', 'border': 1,}) #Set Totals formatting        
+        worksheet.write_row(rowCounter, 0, footerTotals[i], cell_format) #Write Totals
+        rowCounter +=1
         for row in table:
             cell_format = workbook.add_format({'border': 1})
             worksheet.write_row(rowCounter, 0, row, cell_format) #Write Table
             rowCounter +=1
-        cell_format = workbook.add_format({'bold': True, 'bg_color': '#F1B07F', 'border': 1,}) #Set header formatting        
+        cell_format = workbook.add_format({'bold': True, 'bg_color': '#F1B07F', 'border': 1,}) #Set footer formatting        
         worksheet.write_row(rowCounter, 0, footerTotals[i], cell_format) #Write Footer Totals
         rowCounter +=4 #For footer and 3 empty rows to separate tables
         i +=1
